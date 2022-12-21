@@ -1,6 +1,0 @@
-[
-  {
-    "files": "*.xtx",
-    "command": "xelatex ${srcFile}"
-  }
-]

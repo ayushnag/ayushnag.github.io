@@ -1,48 +1,39 @@
 @font-face {
   font-family: "Colfax Web";
-  src: url("../fonts/Colfax Web/Regular.woff");
+  src: url("fonts/Colfax Web/Regular.woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Colfax Web";
-  src: url("../fonts/Colfax Web/RegularItalic.woff");
+  src: url("fonts/Colfax Web/RegularItalic.woff");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Colfax Web";
-  src: url("../fonts/Colfax Web/Bold.woff");
+  src: url("fonts/Colfax Web/Bold.woff");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Colfax Web";
-  src: url("../fonts/Colfax Web/BoldItalic.woff");
+  src: url("fonts/Colfax Web/BoldItalic.woff");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "SFMoMA";
-  src: url('../fonts/MoMA/SFMOMAText-Bold.ttf') format("truetype"),
-       url('../fonts/MoMA/SFMOMAText-Bold.otf') format("otf");
+  src: url('fonts/MoMA/SFMOMAText-Bold.ttf') format("truetype"),
+       url('fonts/MoMA/SFMOMAText-Bold.otf') format("otf");
   font-weight: bold;
   font-style: normal;
 }
 
 html {
   min-height: 100%;
-  /* background-color: antiquewhite; */
-  background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), radial-gradient(100% 233.99% at 0% 100%, #B70000 0%, #AD00FF 100%), linear-gradient(307.27deg, #219D87 0.37%, #2650BA 50.19%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #FF00C7 0%, #006C7A 49.48%, #760000 100%);
-  background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
-  /* background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal; */
-  /* background: radial-gradient(100% 225% at 100% 0%, #120037 0%, #000000 100%), linear-gradient(35deg, #C0FFC7 0%, #17001F 75%), linear-gradient(55deg, #2400FF 0%, #000000 100%), linear-gradient(90deg, #FFE037 0%, #FFE037 40%, #1DCD9F 40%, #1DCD9F 50%, #088C6F 50%, #088C6F 70%, #23033C 70%, #23033C 100%), linear-gradient(180deg, #FF8FE5 0%, #FF8FE5 45%, #FBFF64 45%, #FBFF64 60%, #76E3FF 60%, #76E3FF 80%, #6EB6E7 80%, #6EB6E7 100%); */
-/* background-blend-mode: screen, overlay, overlay, darken, normal;   */
-  /* background-image: url('/img/stacked-steps-haikei\ \(1\).svg') */
-  /* background: rgb(2,0,36); */
-/* background: linear-gradient(180deg, rgba(2,0,36,0.8) 0%, rgba(9,9,121,0.8) 35%, rgba(0,212,255,0.8) 100%); */
 }
 
 body {
@@ -57,7 +48,7 @@ body {
   background: white;
   color: #222;
 
-  max-width: 800px;
+  max-width: 660px;
   min-height: 100%;
 }
 
@@ -132,33 +123,12 @@ a:hover {
 }
 
 .profile-pic > img {
-  width:140px;
-  height: 140px;
+  width:120px;
+  height:120px;
   border-radius:100%;
   margin-right:10px;
-  zoom: 1.1;
-  /* overflow: hidden */
   /* -webkit-filter: grayscale(100%); */
   /* filter: grayscale(100%); */
-}
-
-.project-img > img {
-  height: 240px;
-  padding-left: 20px;
-  /* border-radius:100%; */
-  /* margin-right:10px; */
-  /* display: block; */
-  /* zoom: 1.1; */
-  /* overflow: hidden */
-  /* -webkit-filter: grayscale(100%); */
-  /* filter: grayscale(100%); */
-}
-
-.project-container {
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  padding-bottom: 1%;
 }
 
 /* .profile-pic > img:hover {
@@ -212,6 +182,17 @@ a:hover {
   font-weight: 700;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-img > img {
+  height: 100px;
+  padding-left: 20px;
+}
+
 @media screen and (max-width: 540px) {
   .profile {
     flex-direction: column;
@@ -223,11 +204,22 @@ a:hover {
     margin-right: auto;
     text-align: center;
   }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-img > img {
+    height: 200px;
+    padding-left: 20px;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) { */
   /* The following was 99% written by GitHub Copilot. */
-  body {
+  /* body {
     background: #222;
     color: #fff;
   }
@@ -263,4 +255,4 @@ a:hover {
     filter: invert(50%);
     -webkit-filter: invert(50%);
   }
-}
+} */

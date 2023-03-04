@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <title>Ayush Nag</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,8 +47,8 @@
 
   <p>
     Most of my code is on <a href="//github.com/ayushnag">GitHub</a> and I also have a
-    resumé</a>. I enjoy meeting new people and am happy to talk
-    about almost anything &mdash; feel free to reach out by sending me an email</a>.
+    <a href="/docs/resume.pdf">resumé</a>. I enjoy meeting new people and am happy to talk
+    about almost anything &mdash; feel free to reach out by sending me an email.
   </p>
 
   <!-- <p>
@@ -55,8 +57,8 @@
 
   <h2>Awards/Honors</h2>
   <p>
-    <li>Washington NASA Space Grant</li>
-    <li>Mary Gates Research Award</li>
+    <li>Washington NASA Space Grant (SOPHY)</li>
+    <li>Mary Gates Research Award (SOPHY)</li>
     <li>CSE Honors Program</li>
   </p>
 
@@ -69,7 +71,14 @@
     </div> -->
 
     <div class="project-container">
-      <p> <span class="pub">SOPHY Database (in-progress)</span> <br/>
+      
+      <p> 
+        <span class="pub"> <a href="https://github.com/ayushnag/sophy">SOPHY Database</a>
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-jupyter-plain-wordmark colored"></i>
+          <i class="devicon-sqlite-plain colored"></i>
+        </span> 
+        <br/>
         Importing, cleaning, and merging ~15 in situ datasets using Python, SQLite, and web API’s. Data exploration and access using Datasette SQLite package. 
         Jupyter notebook for geospatial data visualization and oceanography code integration
       </p>
@@ -77,7 +86,13 @@
     </div>
 
     <div class="project-container">
-      <p> <span class="pub">PrismNotes</span> <br/>
+      <p> <span class="pub">PrismNotes
+        <i class="devicon-java-plain colored"></i>
+        <i class="devicon-android-plain colored"></i>
+        <i class="devicon-opencv-plain-wordmark colored"></i>
+          
+      </span>
+      <br/>
         I built the PrismNotes app to reduce test anxiety and combat mental health issues for students by providing a notes organization tool to create digital notebooks from handwritten notes. 
       I worked in Android Studio using Java, Microsoft’s Computer Vision API, and JSON
       </p>
@@ -86,30 +101,42 @@
     </div>
 
     <div class="project-container">
-      <p> <span class="pub">UW Campus Maps</span> <br/>
+      <p> <span class="pub">UW Campus Maps
+        <i class="devicon-java-plain colored"></i>
+        <i class="devicon-react-original colored"></i>
+      </span> 
+      <br/>
         ReactJS app to find the shortest path between campus buildings. 
         Java engine that handle core logic of the application (model) with ReactJS front-end (view) hosted on Spark server (controller).
         Djisktra.java implements Dijkstra’s algorithm to find the shortest path between two nodes in a weighted, undirected graph. 
         Heavy use of Java generics so model can be scaled for a variety of graph applications. 
-  
-
       </p>
       <div class="project-img"> <img src="img/campusmaps.png" /> </div>
     </div>
 
     <div class="project-container">
-      <p> <span class="pub">Java Chess (Magic BitBoard)</span> <br/>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p> <span class="pub">Java Chess (Magic BitBoard)
+        <i class="devicon-java-plain colored"></i>
+      </span> <br/>
+        Java Chess engine that uses a <a href="https://www.chessprogramming.org/Magic_Bitboards">Magic BitBoard</a> to represent the board state. 
+        The board is represented as a 2D array of 64 squares (8x8). Each bit represents a square on the board. 
+        The Magic BitBoard is a bitwise OR of all the squares that are occupied by a piece. 
+        This allows for fast and efficient board state representation and manipulation.
       </p>
       <div class="project-img"> <img src="img/chesstemp.jpeg" /> </div>
     </div>
 
     <div class="project-container">
-      <p> <span class="pub">Java Wordle</span> <br/>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p> <span class="pub"> <a href="https://github.com/ayushnag/wordle">Java Wordle Game</a>
+        <i class="devicon-java-plain colored"></i>
+      </span> <br/>
+        Java Wordle game based on the popular NYT Wordle game. User interaction is through the command line interface. Words are checked from pre-loaded dictionary set.
+        Built during a quiet Thursday afternoon.         
       </p>
       <div class="project-img"> <img src="img/wordle.png" /> </div>
     </div>
+
+  
 
   <!-- <h2>Testing</h2> -->
   <!-- <div class="project-container"> -->
@@ -145,12 +172,20 @@
   </p> -->
   <h2>Coursework</h2>
   <p>
-    <li>CSE 142/143: Computer Programming I/II</li>
-    <li>CSE 311: Foundations of Computing (Discrete Math)</li>
-    <li>CSE 312: Probability for CS</li>
-    <li>CSE 331: Software Design</li>
-    <li>CSE 332: Data Structures and Parallelization</li>
+    <span class="pub">Core</span><br />
+    <li>CSE 452: Distributed Systems</li>
+    <li>CSE 455: Computer Vision</li>
+    <li>CSE 446: Machine Learning</li>
+    <li>CSE 333: Systems Programming</li>
     <li>CSE 351: Hardware Software Interface</li>
+    <li>CSE 332: Data Structures and Parallelization</li>
+    <li>CSE 331: Software Design and Implementation</li>
+    <li>CSE 311: Foundations of Computing (Discrete Math)</li>
+    <li>CSE 312: Foundations of Computing (Probability for CS)</li>
+    <li>CSE 142/143: Computer Programming I/II</li>
+
+    <span class="pub">Supplementary</span><br />
+    <li>CSE 599A: Company-Building from Formation to Exit</li>
     <li>CSE 490A: Software Entrepreneurship</li>
     <li>MATH 124/125/126: Calculus I/II/III</li>
     <li>MATH 208: Linear Algebra</li>

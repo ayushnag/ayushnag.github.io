@@ -67,11 +67,12 @@ h1, h2, h3 {
 
 h2 {
   margin-bottom: -10px;
+  font-size: 40px
 }
 
 p {
   font-family: "Colfax Web", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 145%;
 }
 
@@ -93,13 +94,23 @@ a, .button, .social > a > img {
 
 a {
   color: #0f73aa;
-  border-bottom: 1px dotted #0f73aa;
+  border-bottom: 1px dotted #c686ff;
   text-decoration: none;
 }
 
+i {
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.slider{
+  margin: 50px auto;
+  width: 50%;
+}
+
 a:hover {
-  color: #c0392b;
-  border-bottom: 1px solid #c0392b;
+  color: #f4c714;
+  border-bottom: 1px solid #f4c714;
 }
 
 .button {
@@ -124,6 +135,66 @@ a:hover {
   border: 0;
   color: #000;
 }
+
+.job-experience {
+  margin-bottom: 24px;
+}
+
+.job-experience h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.job-experience ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.job-experience li {
+  margin-bottom: 16px;
+}
+
+.job-experience .job-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.job-experience .company {
+  color: #0072C6;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.job-experience .dates {
+  color: #5A5A5A;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.job-experience .location {
+  color: #5A5A5A;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.job-experience .responsibilities {
+  margin-left: 16px;
+  padding-left: 0;
+}
+
+.job-experience .responsibilities li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
 
 .profile {
   display:flex;
@@ -210,6 +281,7 @@ a:hover {
 .pub {
   font-family: -apple-system, BlinkMacSystemFont, 'Colfax Web', sans-serif;
   font-weight: 700;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 540px) {
@@ -233,7 +305,7 @@ a:hover {
   }
 
   a {
-    color: #3498db;
+    color: #c686ff;
   }
 
   .profile-text > h1 {

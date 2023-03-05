@@ -35,14 +35,25 @@
 html {
   min-height: 100%;
   /* background-color: antiquewhite; */
+
   background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), radial-gradient(100% 233.99% at 0% 100%, #B70000 0%, #AD00FF 100%), linear-gradient(307.27deg, #219D87 0.37%, #2650BA 50.19%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #FF00C7 0%, #006C7A 49.48%, #760000 100%);
   background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
-  /* background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal; */
+
+  /* background: linear-gradient(115deg, #000000 0%, #00C508 55%, #000000 100%), linear-gradient(0deg, #0057FF 0%, #020077 100%), conic-gradient(from 110deg at -5% 35%, #000000 0deg, #FAFF00 360deg), conic-gradient(from 220deg at 30% 30%, #FF0000 0deg, #0000FF 220deg, #240060 360deg), conic-gradient(from 235deg at 60% 35%, #0089D7 0deg, #0000FF 180deg, #240060 360deg); */
+  /* background-blend-mode: soft-light, soft-light, overlay, screen, normal; */
+
+  background: linear-gradient(235deg, #FFFFFF 0%, #000F25 100%), linear-gradient(180deg, #0e4b01 0%, #000000 100%), linear-gradient(235deg, #efdfc6 0%, #efdfc6 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #00C9B1 calc(70% + 1px), #00C9B1 100%), linear-gradient(125deg, #ffffff 0%, #ffffff 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #00C9B1 calc(70% + 1px), #00C9B1 100%);
+  background-blend-mode: soft-light, screen, darken, normal;
+  
+  /* background: radial-gradient(100% 225% at 0% 0%, #DE3E3E 0%, #17115C 100%), radial-gradient(100% 225% at 100% 0%, #FF9040 0%, #FF0000 100%), linear-gradient(180deg, #CE63B7 0%, #ED6283 100%), radial-gradient(100% 120% at 75% 0%, #A74600 0%, #000000 100%), linear-gradient(310deg, #0063D8 0%, #16009A 50%); */
+  /* background-blend-mode: overlay, color-dodge, color-burn, color-dodge, normal; */
+
+  /* background: linear-gradient(288deg, #FFB6B9 0%, #FFB6B9 35%, #FAE3D9 calc(35% + 1px), #FAE3D9 45%, #BBDED6 calc(45% + 1px), #BBDED6 65%, #61C0BF calc(65% + 1px), #61C0BF 100%); */
+
   /* background: radial-gradient(100% 225% at 100% 0%, #120037 0%, #000000 100%), linear-gradient(35deg, #C0FFC7 0%, #17001F 75%), linear-gradient(55deg, #2400FF 0%, #000000 100%), linear-gradient(90deg, #FFE037 0%, #FFE037 40%, #1DCD9F 40%, #1DCD9F 50%, #088C6F 50%, #088C6F 70%, #23033C 70%, #23033C 100%), linear-gradient(180deg, #FF8FE5 0%, #FF8FE5 45%, #FBFF64 45%, #FBFF64 60%, #76E3FF 60%, #76E3FF 80%, #6EB6E7 80%, #6EB6E7 100%); */
-/* background-blend-mode: screen, overlay, overlay, darken, normal;   */
+  /* background-blend-mode: screen, overlay, overlay, darken, normal; */
+
   /* background-image: url('/img/stacked-steps-haikei\ \(1\).svg') */
-  /* background: rgb(2,0,36); */
-/* background: linear-gradient(180deg, rgba(2,0,36,0.8) 0%, rgba(9,9,121,0.8) 35%, rgba(0,212,255,0.8) 100%); */
 }
 
 body {
@@ -57,7 +68,7 @@ body {
   background: white;
   color: #222;
 
-  max-width: 800px;
+  max-width: 850px;
   min-height: 100%;
 }
 
@@ -94,7 +105,7 @@ a, .button, .social > a > img {
 
 a {
   color: #0f73aa;
-  border-bottom: 1px dotted #c686ff;
+  border-bottom: 1px dotted #1fada1;
   text-decoration: none;
 }
 
@@ -205,9 +216,9 @@ a:hover {
 .profile-pic > img {
   width:140px;
   height: 140px;
-  border-radius:100%;
+  border-radius:10%;
   margin-right:10px;
-  zoom: 1.1;
+  zoom: 1.2;
   /* overflow: hidden */
   /* -webkit-filter: grayscale(100%); */
   /* filter: grayscale(100%); */
@@ -300,12 +311,13 @@ a:hover {
 @media (prefers-color-scheme: dark) {
   /* The following was 99% written by GitHub Copilot. */
   body {
-    background: #222;
+    background: #323232;
     color: #fff;
+    border-radius: 20px;
   }
 
   a {
-    color: #c686ff;
+    color: #1fada1;
   }
 
   .profile-text > h1 {
